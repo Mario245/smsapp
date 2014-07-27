@@ -14,6 +14,8 @@ gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'devise'
 gem 'simple_form'
 gem 'thin'
+gem 'figaro'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
