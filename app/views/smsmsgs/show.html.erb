@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Phone no to:</strong>
+  <%= @smsmsg.phone_no_to %>
+</p>
+
+<p>
+  <strong>Phone no from:</strong>
+  <%= @smsmsg.phone_no_from %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @smsmsg.body %>
+</p>
+
+<%= link_to 'Edit', edit_smsmsg_path(@smsmsg) %> |
+<%= link_to 'Back', smsmsgs_path %>
