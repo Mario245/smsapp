@@ -78,3 +78,4 @@ class SmsmsgsController < ApplicationController
       params.require(:smsmsg).permit(:phone_no_to, :phone_no_from, :body)
     end
 end
+end
