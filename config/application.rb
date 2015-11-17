@@ -31,8 +31,11 @@ module Smsapp
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+<<<<<<< HEAD
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+=======
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
   end
 end

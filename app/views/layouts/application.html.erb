@@ -2,17 +2,43 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title><%= content_for?(:title) ? yield(:title) : "My Application" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "My Application" %>">
+=======
+    <title><%= content_for?(:title) ? yield(:title) : "Smsapp" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Smsapp" %>">
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
+<<<<<<< HEAD
     <header>
       <%= render 'layouts/navigation' unless current_page?(root_path) %>
     </header>
       <%= render 'layouts/messages' %>
       <%= yield %>
+=======
+    <%# application layout styled for Bootstrap 2.3 %>
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+      <div class="container">
+        <div class="content">
+           <div class="row">
+            <div class="span12">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
+            </div>
+          </div>
+          <footer>
+          </footer>
+        </div>
+      </div>
+    </main>
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
   </body>
 </html>

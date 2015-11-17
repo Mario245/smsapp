@@ -22,9 +22,15 @@ SimpleForm.setup do |config|
     b.use :placeholder
 
     ## Optional extensions
+<<<<<<< HEAD
     # They are disabled unless you pass `f.input EXTENSION_NAME => true`
     # to the input. If so, they will retrieve the values from the model
     # if any exists. If you want to enable any of those
+=======
+    # They are disabled unless you pass `f.input EXTENSION_NAME => :lookup`
+    # to the input. If so, they will retrieve the values from the model
+    # if any exists. If you want to enable the lookup for any of those
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
     # extensions by default, you can change `b.optional` to `b.use`.
 
     # Calculates maxlength from length validations for string inputs
@@ -43,12 +49,15 @@ SimpleForm.setup do |config|
     b.use :label_input
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
     b.use :error, wrap_with: { tag: :span, class: :error }
+<<<<<<< HEAD
 
     ## full_messages_for
     # If you want to display the full error message for the attribute, you can
     # use the component :full_error, like:
     #
     # b.use :full_error, wrap_with: { tag: :span, class: :error }
+=======
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
   end
 
   # The default wrapper to be used by the FormBuilder.
@@ -72,7 +81,11 @@ SimpleForm.setup do |config|
   config.error_notification_tag = :div
 
   # CSS class to add for error notification helper.
+<<<<<<< HEAD
   config.error_notification_class = 'error_notification'
+=======
+  config.error_notification_class = 'alert alert-error'
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
 
   # ID to add for error notification helper.
   # config.error_notification_id = nil
@@ -90,13 +103,19 @@ SimpleForm.setup do |config|
   # config.collection_wrapper_class = nil
 
   # You can wrap each item in a collection of radio/check boxes with a tag,
+<<<<<<< HEAD
   # defaulting to :span.
+=======
+  # defaulting to :span. Please note that when using :boolean_style = :nested,
+  # SimpleForm will force this option to be a label.
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
   # config.item_wrapper_tag = :span
 
   # You can define a class to use in all item wrappers. Defaulting to none.
   # config.item_wrapper_class = nil
 
   # How the label text should be generated altogether with the required text.
+<<<<<<< HEAD
   # config.label_text = lambda { |label, required, explicit_label| "#{required} #{label}" }
 
   # You can define the class to use on all labels. Default is nil.
@@ -105,6 +124,15 @@ SimpleForm.setup do |config|
   # You can define the default class to be used on forms. Can be overriden
   # with `html: { :class }`. Defaulting to none.
   # config.default_form_class = nil
+=======
+  # config.label_text = lambda { |label, required| "#{required} #{label}" }
+
+  # You can define the class to use on all labels. Default is nil.
+  config.label_class = 'control-label'
+
+  # You can define the class to use on all forms. Default is simple_form.
+  # config.form_class = :simple_form
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
 
   # You can define which elements should obtain additional classes
   # config.generate_additional_classes_for = [:wrapper, :label, :input]
@@ -131,10 +159,13 @@ SimpleForm.setup do |config|
   # type as key and the wrapper that will be used for all inputs with specified type.
   # config.wrapper_mappings = { string: :prepend }
 
+<<<<<<< HEAD
   # Namespaces where SimpleForm should look for custom input classes that
   # override default inputs.
   # config.custom_inputs_namespaces << "CustomInputs"
 
+=======
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
   # Default priority for time_zone inputs.
   # config.time_zone_priority = nil
 
@@ -152,6 +183,7 @@ SimpleForm.setup do |config|
 
   # Default class for inputs
   # config.input_class = nil
+<<<<<<< HEAD
 
   # Define the default class of the input wrapper of the boolean input.
   config.boolean_label_class = 'checkbox'
@@ -162,4 +194,6 @@ SimpleForm.setup do |config|
 
   # Defines which i18n scope will be used in Simple Form.
   # config.i18n_scope = 'simple_form'
+=======
+>>>>>>> 9f35aceee3e5cb45a3e7d537f52f16af035aff00
 end
